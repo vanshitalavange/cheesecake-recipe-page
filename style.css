@@ -8,3 +8,8 @@ body{
     display: flex;
     flex-direction: column;
 }
+
+.page__desc{
+    display: flex;
+    flex-direction: column;
+}
