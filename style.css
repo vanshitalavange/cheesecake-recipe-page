@@ -16,4 +16,49 @@ body{
 
 .desc__details{
     display: flex;
+    flex-direction: row;
+}
+.recipe__info{
+    display: flex;
+   flex-direction: row;
+}
+
+.recipe__ingredients{
+    display: flex;
+    flex-direction: column;
+}
+
+.graham-cracker-crust,.cheesecake{
+    display: flex;
+    flex-direction: column;
+
+}
+.graham-ingredients-list,.cheesecake-ingredients-list{
+    display: flex;
+    flex-direction: column;
+}
+.ingredient{
+  display: flex;
+  flex-direction: row;
+}
+.recipe__stats{
+    display: flex;
+    flex-direction: column;
+}
+.stats-element{
+    display: flex;
+    flex-direction: row;
+}
+
+.yields,.prep-time,.cook-time,.total-time{
+  display: flex;
+  flex-direction: column;
+}
+.recipe__instructions{
+    display: flex;
+    flex-direction: column;
+}
+.instruction-container{
+display: flex;
+flex-direction: row;
 }
