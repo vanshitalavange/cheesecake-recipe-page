@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
-
+/*    font-family: ;
+    font-weight: ;
+    font-size:;
+    line-height:;*/
 body{
     margin:0;
     padding:0;
     box-sizing: border-box;
+}
+:root{
+    --gray-1:#333333;
+    --gray-2:#4F4F4F;
+    --gray-3:#828282;
+    --gray-4:#BDBDBD;
+    --black-color:#000000;
+    --orange-color:#F2994A;
 }
 
 .page{
@@ -15,10 +26,26 @@ body{
     display: flex;
     flex-direction: column;
 }
+.desc__heading{
+   font-family: Playfair Display;
+   font-weight: 700;
+   font-size:3rem;
+   line-height:4rem;
+}
 
 .desc__details{
     display: flex;
     flex-direction: row;
+}
+.desc-text{
+    font-family: Montserrat ;
+    font-weight: 500 ;
+    font-size:0.9rem;
+    line-height:1rem;
+    color:var(--gray-2);
+}
+.page__image{
+    width:40vw;
 }
 .recipe__info{
     display: flex;
@@ -29,19 +56,51 @@ body{
     display: flex;
     flex-direction: column;
 }
+.ingredients-heading{
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-size:1.5rem;
+    line-height:2rem;
+    color:var(--gray-1);
+    
+}
 
 .graham-cracker-crust,.cheesecake{
     display: flex;
     flex-direction: column;
 
 }
+.graham-heading,.cheesecake-heading{
+    font-family: Playfair Display;
+    font-weight: 400;
+    font-size:1.1rem;
+    line-height:1.4rem;
+    color:var(--gray-1);
+}
 .graham-ingredients-list,.cheesecake-ingredients-list{
     display: flex;
     flex-direction: column;
 }
+.checkbox-container{
+    border:1px solid var(--gray-3); 
+    border-radius:10px;
+    width:21px;
+    height:21px;
+}
 .ingredient{
   display: flex;
   flex-direction: row;
+}
+.ingredient-text{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size:1rem;
+    line-height:1.56rem;
+    color:var(--gray-1);
+}
+.toppings{
+    font-style:italic;
+    font-weight: 500;
 }
 .recipe__stats{
     display: flex;
@@ -56,11 +115,75 @@ body{
   display: flex;
   flex-direction: column;
 }
+.stats-element-heading{
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size:0.7rem;
+    line-height:0.7rem;
+    color:var(--gray-4);
+  
+}
+.stats-element-text{
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size:1rem;
+    line-height:1rem;
+    color:var(--gray-1);
+
+}
 .recipe__instructions{
     display: flex;
     flex-direction: column;
 }
+.instructions-heading{
+    font-family:Playfair Display ;
+    font-weight: bold;
+    font-size:1.5rem;
+    line-height:2rem;
+    color:var(--gray-1);
+}
 .instruction-container{
 display: flex;
 flex-direction: row;
+}
+.instruction-number{
+    background-color: var(--orange-color);
+    color:white;
+    height:36px;
+    width:36px;
+    border-radius: 6px;
+    font-family: Playfair Display;
+    font-weight:700;
+    font-size:1.5rem;
+    line-height:2rem;
+}
+.instruction-text{
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size:1rem;
+    line-height:1.25rem;
+    color:var(--black-color);
+}
+.instruction-in-bold{
+    color:var(--gray-1);
+}
+.recipe__source{
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size:1rem;
+    line-height:1.5rem;
+    color:var(--gray-4);
+}
+.page__footer{
+    font-family:Montserrat;
+    font-weight:500;
+    font-size:1rem;
+    line-height:1rem;
+    color:#828282;
+}
+
+.page__footer a{
+    color:var(--gray-3);
+    font-weight: 700;
+    
 }
