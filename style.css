@@ -13,18 +13,24 @@ body{
     --gray-2:#4F4F4F;
     --gray-3:#828282;
     --gray-4:#BDBDBD;
+    --gray-5:#C4C4C4;
     --black-color:#000000;
     --orange-color:#F2994A;
 }
 
 .page{
+    width:70vw;
+    margin-left:15%; 
     display: flex;
     flex-direction: column;
+    gap:5vh;
+    /* align-items:center;  */
 }
 
 .page__desc{
     display: flex;
     flex-direction: column;
+    gap:2vh;
 }
 .desc__heading{
    font-family: Playfair Display;
@@ -36,6 +42,12 @@ body{
 .desc__details{
     display: flex;
     flex-direction: row;
+    gap:0.5rem;
+}
+.desc-icon{
+    align-self: flex-start;
+    transform : rotate(90deg);
+    color: var(--gray-5);
 }
 .desc-text{
     font-family: Montserrat ;
@@ -43,18 +55,21 @@ body{
     font-size:0.9rem;
     line-height:1rem;
     color:var(--gray-2);
+    width: 41em;
 }
 .page__image{
-    width:40vw;
+    width:70vw;
 }
 .recipe__info{
     display: flex;
    flex-direction: row;
+   justify-content: space-between;
 }
 
 .recipe__ingredients{
     display: flex;
     flex-direction: column;
+    gap:4vh;
 }
 .ingredients-heading{
     font-family: Playfair Display;
@@ -68,6 +83,7 @@ body{
 .graham-cracker-crust,.cheesecake{
     display: flex;
     flex-direction: column;
+    gap:4vh;
 
 }
 .graham-heading,.cheesecake-heading{
@@ -80,16 +96,22 @@ body{
 .graham-ingredients-list,.cheesecake-ingredients-list{
     display: flex;
     flex-direction: column;
+    gap:0.5rem;
+
 }
-.checkbox-container{
+input[type="checkbox"]{
     border:1px solid var(--gray-3); 
     border-radius:10px;
     width:21px;
     height:21px;
 }
+
+
 .ingredient{
   display: flex;
   flex-direction: row;
+  gap:0.5rem;
+  width:38em;
 }
 .ingredient-text{
     font-family: Montserrat;
@@ -98,17 +120,25 @@ body{
     line-height:1.56rem;
     color:var(--gray-1);
 }
+
 .toppings{
     font-style:italic;
     font-weight: 500;
 }
 .recipe__stats{
+    
     display: flex;
     flex-direction: column;
 }
 .stats-element{
     display: flex;
     flex-direction: row;
+}
+.yields-icon{
+    color:var(--orange-color);
+}
+.time-icon{
+    color:var(--gray-2);
 }
 
 .yields,.prep-time,.cook-time,.total-time{
@@ -130,6 +160,9 @@ body{
     line-height:1rem;
     color:var(--gray-1);
 
+}
+.yields .stats-element-text{
+    color:var(--orange-color);
 }
 .recipe__instructions{
     display: flex;
