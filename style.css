@@ -20,7 +20,8 @@ body{
 
 .page{
     width:70vw;
-    margin-left:15%; 
+    margin-left:15%;
+    margin-top:2rem; 
     display: flex;
     flex-direction: column;
     gap:5vh;
