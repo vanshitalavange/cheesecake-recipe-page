@@ -100,11 +100,14 @@ body{
     gap:0.5rem;
 
 }
-input[type="checkbox"]{
+.checkbox-container{
     border:1px solid var(--gray-3); 
     border-radius:10px;
     width:21px;
     height:21px;
+}
+.c-seven{
+    width:50px;
 }
 
 
@@ -257,12 +260,14 @@ justify-content: space-between;
     display: flex;
     flex-direction: column;
     gap:2vh;
+    height: fit-content;
 }
 .desc__heading{
    font-family: Playfair Display;
    font-weight: 700;
    font-size:1.5rem;
    line-height:2rem;
+
 }
 
 .desc__details{
@@ -298,7 +303,7 @@ justify-content: space-between;
 .recipe__ingredients{
     display: flex;
     flex-direction: column;
-    gap:4vh;
+    gap:3vh;
 }
 .ingredients-heading{
     font-family: Playfair Display;
@@ -312,7 +317,7 @@ justify-content: space-between;
 .graham-cracker-crust,.cheesecake{
     display: flex;
     flex-direction: column;
-    gap:4vh;
+    gap:3vh;
 
 }
 .graham-heading,.cheesecake-heading{
@@ -328,13 +333,27 @@ justify-content: space-between;
     gap:0.5rem;
 
 }
-input[type="checkbox"]{
+input[type="checkbox" i]{
+    margin:0;
+}
+.checkbox-container{
     border:1px solid var(--gray-3); 
     border-radius:10px;
-    width:21px;
-    height:21px;
+    width: 18px;
+    height:18px;
 }
-
+.g-one,.c-one{
+     width: 35px; 
+}
+.c-five{
+    width:25px; 
+}
+.c-three{
+    width:20px;
+}
+.c-seven{
+    width:75px; 
+}
 
 .ingredient{
   display: flex;
@@ -367,17 +386,21 @@ input[type="checkbox"]{
     justify-content:flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
+    gap:4vw;
 }
 .stats-element{
     display: flex;
     flex-direction: row;
-    width:7em;
+     width:30%;
     gap:0.5rem;
     
 }
-
+.yields-container{
+    order:-1;
+    flex-basis:100%;
+}
 .stats-element .material-icons{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .yields-icon{
     color:var(--orange-color);
@@ -394,7 +417,7 @@ input[type="checkbox"]{
 .stats-element-heading{
     font-family: Montserrat;
     font-weight: 700;
-    font-size:0.7rem;
+    font-size:0.5rem;
     line-height:0.7rem;
     color:var(--gray-4);
   
@@ -402,8 +425,8 @@ input[type="checkbox"]{
 .stats-element-text{
     font-family: Montserrat;
     font-weight: 500;
-    font-size:1rem;
-    line-height:1rem;
+    font-size:0.6rem;
+    line-height:0.7rem;
     color:var(--gray-1);
 
 }
@@ -414,7 +437,7 @@ input[type="checkbox"]{
     display: flex;
     flex-direction: column;
     gap:4vh;
-    width:100vw; 
+    width:25em; 
 }
 .instructions-heading{
     font-family:Playfair Display ;
@@ -447,7 +470,7 @@ gap:3vw;
     font-size:1rem;
     line-height:1.25rem;
     color:var(--black-color);
-    width:75vw;
+    width:21em;
 }
 .instruction-in-bold{
     color:var(--gray-1);
@@ -459,6 +482,10 @@ gap:3vw;
     line-height:1rem;
     color:var(--gray-4);
     margin-top:2rem;
+   
+}
+.source-text{
+    display: block;
 }
 .page__footer{
     margin-top:2.5rem;
@@ -466,7 +493,7 @@ gap:3vw;
     text-align: center;
     font-family:Montserrat;
     font-weight:500;
-    font-size:1rem;
+    font-size:0.8rem;
     line-height:1rem;
     color:#828282;
 }
