@@ -1,513 +1,504 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap");
 /*    font-family: ;
     font-weight: ;
     font-size:;
     line-height:;*/
-body{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-:root{
-    --gray-1:#333333;
-    --gray-2:#4F4F4F;
-    --gray-3:#828282;
-    --gray-4:#BDBDBD;
-    --gray-5:#C4C4C4;
-    --black-color:#000000;
-    --orange-color:#F2994A;
-}
-
-.page{
-    width:70vw;
-    margin-left:15%;
-    margin-top:2rem; 
-    display: flex;
-    flex-direction: column;
-    gap:5vh;
-    /* align-items:center;  */
+:root {
+  --gray-1: #333333;
+  --gray-2: #4f4f4f;
+  --gray-3: #828282;
+  --gray-4: #bdbdbd;
+  --gray-5: #c4c4c4;
+  --black-color: #000000;
+  --orange-color: #f2994a;
 }
 
-.page__desc{
-    display: flex;
-    flex-direction: column;
-    gap:2vh;
-}
-.desc__heading{
-   font-family: Playfair Display;
-   font-weight: 700;
-   font-size:3rem;
-   line-height:4rem;
-}
-
-.desc__details{
-    display: flex;
-    flex-direction: row;
-    gap:0.5rem;
-}
-.desc-icon{
-    align-self: flex-start;
-    transform : rotate(90deg);
-    color: var(--gray-5);
-}
-.desc-text{
-    font-family: Montserrat ;
-    font-weight: 500 ;
-    font-size:0.9rem;
-    line-height:1rem;
-    color:var(--gray-2);
-    width: 41em;
-}
-.page__image{
-    width:70vw;
-}
-.recipe__info{
-    display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-}
-
-.recipe__ingredients{
-    display: flex;
-    flex-direction: column;
-    gap:4vh;
-}
-.ingredients-heading{
-    font-family: Playfair Display;
-    font-weight: 700;
-    font-size:1.5rem;
-    line-height:2rem;
-    color:var(--gray-1);
-    
-}
-
-.graham-cracker-crust,.cheesecake{
-    display: flex;
-    flex-direction: column;
-    gap:4vh;
-
-}
-.graham-heading,.cheesecake-heading{
-    font-family: Playfair Display;
-    font-weight: 400;
-    font-size:1.1rem;
-    line-height:1.4rem;
-    color:var(--gray-1);
-}
-.graham-ingredients-list,.cheesecake-ingredients-list{
-    display: flex;
-    flex-direction: column;
-    gap:0.5rem;
-
-}
-.checkbox-container{
-    border:1px solid var(--gray-3); 
-    border-radius:10px;
-    width:21px;
-    height:21px;
-}
-.c-seven{
-    width:50px;
-}
-
-
-.ingredient{
-  display: flex;
-  flex-direction: row;
-  gap:0.5rem;
-  width:38em;
-}
-.ingredient-text{
-    font-family: Montserrat;
-    font-weight: 400;
-    font-size:1rem;
-    line-height:1.56rem;
-    color:var(--gray-1);
-}
-
-.toppings{
-    font-style:italic;
-    font-weight: 500;
-}
-.recipe__stats{
-    background: #FFFFFF;
-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    width:14em;
-    height:22em;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.stats-element{
-    display: flex;
-    flex-direction: row;
-    width:9em;
-    gap:0.5rem;
-}
-.stats-element .material-icons{
-    font-size: 2rem;
-}
-.yields-icon{
-    color:var(--orange-color);
-}
-.time-icon{
-    color:var(--gray-2);
-}
-
-.yields,.prep-time,.cook-time,.total-time{
+.page {
+  width: 70vw;
+  margin-left: 15%;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  gap:0.5rem;
-}
-.stats-element-heading{
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size:0.7rem;
-    line-height:0.7rem;
-    color:var(--gray-4);
-  
-}
-.stats-element-text{
-    font-family: Montserrat;
-    font-weight: 500;
-    font-size:1rem;
-    line-height:1rem;
-    color:var(--gray-1);
-
-}
-.yields .stats-element-text{
-    color:var(--orange-color);
-}
-.recipe__instructions{
-    display: flex;
-    flex-direction: column;
-    gap:4vh;
-    width:36em; 
-}
-.instructions-heading{
-    font-family:Playfair Display ;
-    font-weight: bold;
-    font-size:1.5rem;
-    line-height:2rem;
-    color:var(--gray-1);
-}
-.instruction-container{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-}
-.instruction-number{
-    background-color: var(--orange-color);
-    color:white;
-    height:36px;
-    width:36px;
-    border-radius: 6px;
-    font-family: Playfair Display;
-    font-weight:700;
-    font-size:1.5rem;
-    line-height:2rem;
-    text-align: center;
-}
-.instruction-text{
-    font-family: Montserrat;
-    font-weight: normal;
-    font-size:1rem;
-    line-height:1.25rem;
-    color:var(--black-color);
-    width:33em;
-}
-.instruction-in-bold{
-    color:var(--gray-1);
-}
-.recipe__source{
-    font-family: Montserrat;
-    font-weight: normal;
-    font-size:1rem;
-    line-height:1.5rem;
-    color:var(--gray-4);
-    margin-top:2rem;
-}
-.page__footer{
-    margin-top:2.5rem;
-    margin-bottom:1rem;
-    text-align: center;
-    font-family:Montserrat;
-    font-weight:500;
-    font-size:1rem;
-    line-height:1rem;
-    color:#828282;
+  gap: 5vh;
+  /* align-items:center;  */
 }
 
-.page__footer a{
-    color:var(--gray-3);
-    font-weight: 700;
-    
+.page__desc {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.desc__heading {
+  font-family: Playfair Display;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 4rem;
 }
 
-@media (max-width:480px){
-
-
-.page{
-    width:100vw;
-    margin-left:2%; 
-    margin-top:2rem; 
-    gap:5vh;
-    /* border:1px solid goldenrod; */
-    
-}
-
-.page__desc{
-    display: flex;
-    flex-direction: column;
-    gap:2vh;
-}
-.desc__heading{
-   font-family: Playfair Display;
-   font-weight: 700;
-   font-size:1.5rem;
-   line-height:2rem;
-
-}
-
-.desc__details{
-    display: flex;
-    flex-direction: row;
-    gap:0.5rem;
-    /* border:1px solid green; */
-}
-.desc-icon{
-    align-self: flex-start;
-    transform : rotate(90deg);
-    color: var(--gray-5);
-}
-.desc-text{
-    font-family: Montserrat ;
-    font-weight: 500 ;
-    font-size:0.75rem;
-    line-height:1rem;
-    color:var(--gray-2);
-    width:25em;
-    
-}
-.page__image{
-    width:96.5%;
-    height:13em;
-    border-radius: 15px;
-     margin-left:0.2rem; 
-    
-}
-.recipe__info{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   flex-wrap: wrap-reverse;
-}
-
-.recipe__ingredients{
-    display: flex;
-    flex-direction: column;
-    gap:3vh;
-}
-.ingredients-heading{
-    font-family: Playfair Display;
-    font-weight: 700;
-    font-size:1.5rem;
-    line-height:2rem;
-    color:var(--gray-1);
-    
-}
-
-.graham-cracker-crust,.cheesecake{
-    display: flex;
-    flex-direction: column;
-    gap:3vh;
-
-}
-.graham-heading,.cheesecake-heading{
-    font-family: Playfair Display;
-    font-weight: 400;
-    font-size:1.1rem;
-    line-height:1.4rem;
-    color:var(--gray-1);
-}
-.graham-ingredients-list,.cheesecake-ingredients-list{
-    display: flex;
-    flex-direction: column;
-    gap:0.5rem;
-    width:98%;
-
-}
-input[type="checkbox" i]{
-    margin:0;
-}
-.checkbox-container{
-    border:1px solid var(--gray-3); 
-    border-radius:10px;
-    width: 1.1rem;
-    height:18px;
-}
- .g-one,.c-one{
-     width: 35px; 
-}
-.c-five{
-    width:25px; 
-}
-.c-three{
-    width:20px;
-}
-.c-seven{
-    width:75px; 
-} 
-
-.ingredient{
+.desc__details {
   display: flex;
   flex-direction: row;
-  gap:0.5rem;
-  width:0em;
-  width:100%;
+  gap: 0.5rem;
 }
-.ingredient-text{
-    font-family: Montserrat;
-    font-weight: 400;
-    font-size:1rem;
-    line-height:1.56rem;
-    color:var(--gray-1);
-    
+.desc-icon {
+  align-self: flex-start;
+  transform: rotate(90deg);
+  color: var(--gray-5);
+}
+.desc-text {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: var(--gray-2);
+  width: 41em;
+}
+.page__image {
+  width: 70vw;
+}
+.recipe__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.toppings{
-    font-style:italic;
-    font-weight: 500;
+.recipe__ingredients {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
 }
-.recipe__stats{
-    background: #FFFFFF;
-    box-shadow: 0px 0px 0px ;
-   border-radius: 0; 
+.ingredients-heading {
+  font-family: Playfair Display;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: var(--gray-1);
+}
+
+.graham-cracker-crust,
+.cheesecake {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
+.graham-heading,
+.cheesecake-heading {
+  font-family: Playfair Display;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  color: var(--gray-1);
+}
+.graham-ingredients-list,
+.cheesecake-ingredients-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.checkbox-container {
+  border: 1px solid var(--gray-3);
+  border-radius: 10px;
+  width: 21px;
+  height: 21px;
+}
+.c-seven {
+  width: 50px;
+}
+
+.ingredient {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  width: 38em;
+}
+.ingredient-text {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.56rem;
+  color: var(--gray-1);
+}
+
+.toppings {
+  font-style: italic;
+  font-weight: 500;
+}
+.recipe__stats {
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  width: 14em;
+  height: 22em;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.stats-element {
+  display: flex;
+  flex-direction: row;
+  width: 9em;
+  gap: 0.5rem;
+}
+.stats-element .material-icons {
+  font-size: 2rem;
+}
+.yields-icon {
+  color: var(--orange-color);
+}
+.time-icon {
+  color: var(--gray-2);
+}
+
+.yields,
+.prep-time,
+.cook-time,
+.total-time {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.stats-element-heading {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  color: var(--gray-4);
+}
+.stats-element-text {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: var(--gray-1);
+}
+.yields .stats-element-text {
+  color: var(--orange-color);
+}
+.recipe__instructions {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  width: 36em;
+}
+.instructions-heading {
+  font-family: Playfair Display;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: var(--gray-1);
+}
+.instruction-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.instruction-number {
+  background-color: var(--orange-color);
+  color: white;
+  height: 36px;
+  width: 36px;
+  border-radius: 6px;
+  font-family: Playfair Display;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+}
+.instruction-text {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: var(--black-color);
+  width: 33em;
+}
+.instruction-in-bold {
+  color: var(--gray-1);
+}
+.recipe__source {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--gray-4);
+  margin-top: 2rem;
+}
+.page__footer {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #828282;
+}
+
+.page__footer a {
+  color: var(--gray-3);
+  font-weight: 700;
+}
+
+@media (max-width: 480px) {
+  .page {
+    width: 100vw;
+    margin-left: 2%;
+    margin-top: 2rem;
+    gap: 5vh;
+    /* border:1px solid goldenrod; */
+  }
+
+  .page__desc {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+  }
+  .desc__heading {
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .desc__details {
     display: flex;
     flex-direction: row;
-    width:100%;
-    height:8em;
-    justify-content:flex-start;
+    gap: 0.5rem;
+    /* border:1px solid green; */
+  }
+  .desc-icon {
+    align-self: flex-start;
+    transform: rotate(90deg);
+    color: var(--gray-5);
+  }
+  .desc-text {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: var(--gray-2);
+    width: 25em;
+  }
+  .page__image {
+    width: 96.5%;
+    height: 13em;
+    border-radius: 15px;
+    margin-left: 0.2rem;
+  }
+  .recipe__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+  }
+
+  .recipe__ingredients {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+  }
+  .ingredients-heading {
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: var(--gray-1);
+  }
+
+  .graham-cracker-crust,
+  .cheesecake {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+  }
+  .graham-heading,
+  .cheesecake-heading {
+    font-family: Playfair Display;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    color: var(--gray-1);
+  }
+  .graham-ingredients-list,
+  .cheesecake-ingredients-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 98%;
+  }
+  input[type="checkbox" i] {
+    margin: 0;
+  }
+  .checkbox-container {
+    border: 1px solid var(--gray-3);
+    border-radius: 10px;
+    width: 1.1rem;
+    height: 18px;
+  }
+  .g-one,
+  .c-one {
+    width: 35px;
+  }
+  .c-five {
+    width: 25px;
+  }
+  .c-three {
+    width: 20px;
+  }
+  .c-seven {
+    width: 75px;
+  }
+
+  .ingredient {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    width: 0em;
+    width: 100%;
+  }
+  .ingredient-text {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.56rem;
+    color: var(--gray-1);
+  }
+
+  .toppings {
+    font-style: italic;
+    font-weight: 500;
+  }
+  .recipe__stats {
+    background: #ffffff;
+    box-shadow: 0px 0px 0px;
+    border-radius: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 8em;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap:4vw;
-}
-.stats-element{
+    gap: 4vw;
+  }
+  .stats-element {
     display: flex;
     flex-direction: row;
-     width:30%;
-    gap:0.5rem;
-    
-}
-.yields-container{
-    order:-1;
-    flex-basis:100%;
-}
-.stats-element .material-icons{
+    width: 30%;
+    gap: 0.5rem;
+  }
+  .yields-container {
+    order: -1;
+    flex-basis: 100%;
+  }
+  .stats-element .material-icons {
     font-size: 1.5rem;
-}
-.yields-icon{
-    color:var(--orange-color);
-}
-.time-icon{
-    color:var(--gray-2);
-}
+  }
+  .yields-icon {
+    color: var(--orange-color);
+  }
+  .time-icon {
+    color: var(--gray-2);
+  }
 
-.yields,.prep-time,.cook-time,.total-time{
-  display: flex;
-  flex-direction: column;
-  gap:0.5rem;
-}
-.stats-element-heading{
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size:0.5rem;
-    line-height:0.7rem;
-    color:var(--gray-4);
-  
-}
-.stats-element-text{
-    font-family: Montserrat;
-    font-weight: 500;
-    font-size:0.6rem;
-    line-height:0.7rem;
-    color:var(--gray-1);
-
-}
-.yields .stats-element-text{
-    color:var(--orange-color);
-}
-.recipe__instructions{
+  .yields,
+  .prep-time,
+  .cook-time,
+  .total-time {
     display: flex;
     flex-direction: column;
-    gap:4vh;
-    width:96%; 
-}
-.instructions-heading{
-    font-family:Playfair Display ;
+    gap: 0.5rem;
+  }
+  .stats-element-heading {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 0.5rem;
+    line-height: 0.7rem;
+    color: var(--gray-4);
+  }
+  .stats-element-text {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 0.6rem;
+    line-height: 0.7rem;
+    color: var(--gray-1);
+  }
+  .yields .stats-element-text {
+    color: var(--orange-color);
+  }
+  .recipe__instructions {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    width: 96%;
+  }
+  .instructions-heading {
+    font-family: Playfair Display;
     font-weight: bold;
-    font-size:1.5rem;
-    line-height:2rem;
-    color:var(--gray-1);
-}
-.instruction-container{
-display: flex;
-flex-direction: row;
-justify-content: flex-start;
-gap:3vw;
-}
-.instruction-number{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: var(--gray-1);
+  }
+  .instruction-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 3vw;
+  }
+  .instruction-number {
     background-color: var(--orange-color);
-    color:white;
-    height:36px;
-    width:36px;
+    color: white;
+    height: 36px;
+    width: 36px;
     border-radius: 6px;
     font-family: Playfair Display;
-    font-weight:700;
-    font-size:1.5rem;
-    line-height:2rem;
-    text-align: center;
-}
-.instruction-text{
-    font-family: Montserrat;
-    font-weight: normal;
-    font-size:1rem;
-    line-height:1.25rem;
-    color:var(--black-color);
-    width:0;
-    width:100%;
-}
-.instruction-in-bold{
-    color:var(--gray-1);
-}
-.recipe__source{
-    font-family: Montserrat;
-    font-weight: normal;
-    font-size:12px;
-    line-height:1rem;
-    color:var(--gray-4);
-    margin-top:2rem;
-   
-}
-.source-text{
-    display: block;
-}
-.page__footer{
-    margin-top:2.5rem;
-    margin-bottom:1rem;
-    text-align: center;
-    font-family:Montserrat;
-    font-weight:500;
-    font-size:0.8rem;
-    line-height:1rem;
-    color:#828282;
-}
-
-.page__footer a{
-    color:var(--gray-3);
     font-weight: 700;
-    
-}
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+  }
+  .instruction-text {
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--black-color);
+    width: 0;
+    width: 100%;
+  }
+  .instruction-in-bold {
+    color: var(--gray-1);
+  }
+  .recipe__source {
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1rem;
+    color: var(--gray-4);
+    margin-top: 2rem;
+  }
+  .source-text {
+    display: block;
+  }
+  .page__footer {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    color: #828282;
+  }
+
+  .page__footer a {
+    color: var(--gray-3);
+    font-weight: 700;
+  }
 }
