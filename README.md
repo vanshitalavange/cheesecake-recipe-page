@@ -36,10 +36,13 @@
 
 ## Overview
 
-- <figcaption>Desktop view</figcaption>
-![screenshot](images/recipe-desktop.png)
-- <figcaption>Mobile view</figcaption>
-![screenshot](images/recipe-mobile.png)
+- Desktop view
+
+  ![screenshot](images/recipe-desktop.png)
+
+- Mobile view
+
+  ![screenshot](images/recipe-mobile.png)
 
 
 
